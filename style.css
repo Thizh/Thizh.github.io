@@ -1,0 +1,26 @@
+*, h1 {
+    font-family: monospace;
+    color: green;
+}
+
+body {
+    background-color: black;
+}
+
+p {
+    font-size: large;
+}
+
+.typed-out {
+    overflow: hidden;
+    border-right: .15em solid red;
+    font-size: 1.6rem;
+    width: 0;
+    animation: 
+        typing 1s steps(100, end) forwards;
+  }
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
