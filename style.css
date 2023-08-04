@@ -1,26 +1,58 @@
-*, h1 {
-    font-family: monospace;
-    color: green;
-}
-
 body {
     background-color: black;
 }
 
-p {
-    font-size: large;
+h1 {
+    color: green;
+    font-family: monospace;
 }
 
-.typed-out {
-    overflow: hidden;
-    border-right: .15em solid red;
-    font-size: 1.6rem;
-    width: 0;
-    animation: 
-        typing 1s steps(100, end) forwards;
-  }
+.details a{
+    background: linear-gradient(#EB4132, #4087F5);
+    width: 200px;
+    background-color: azure;
+    padding: 2px;
+    border-radius: 20px;
+    position: absolute;
+    display: block;
+    left: 50%;
+    right: 50%;
+    margin-top: 40px;
+    color: black;
+}
 
-@keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
-  }
+.social {
+    /* Add some margin for spacing */
+    margin-top: 20px;
+}
+
+.social img{
+    filter: invert(48%) sepia(13%) saturate(3207%) hue-rotate(130deg);
+    height: 75px;
+    width: 75px;
+    margin-left: 10px;
+}
+
+/* For desktop mode, display social icons horizontally */
+@media (min-width: 768px) {
+    .social {
+        display: flex;
+        justify-content: center;
+    }
+
+    .social a {
+        margin: 0 10px; /* Add spacing between icons */
+    }
+}
+
+/* For mobile mode, display social icons vertically */
+@media (max-width: 767px) {
+    .social {
+        display: block;
+    }
+
+    .social a {
+        display: block;
+        margin: 10px auto; /* Center the icons */
+    }
+}
