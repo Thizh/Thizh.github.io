@@ -128,11 +128,11 @@
     }
 
     .name {
-        font-size: 40px;
+        font-size: 35px;
     }
 
     .social img{
-        height: 90px;
-        width: 90px;
+        height: 70px;
+        width: 70px;
     }
 }
