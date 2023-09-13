@@ -1,58 +1,138 @@
-body {
-    background-color: black;
+:root {
+    color-scheme: light dark;
 }
 
-h1 {
-    color: green;
-    font-family: monospace;
+.name {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: bisque;
+    font-variant: small-caps;
 }
 
-.details a{
-    background: linear-gradient(#EB4132, #4087F5);
-    width: 200px;
-    background-color: azure;
-    padding: 2px;
-    border-radius: 20px;
-    position: absolute;
-    display: block;
-    left: 50%;
-    right: 50%;
-    margin-top: 40px;
-    color: black;
+.container {
+    display: grid;
+    width: auto;
+    height: 500px;
+    place-items: center;
+    overflow: hidden;
+    --planets: calc(var(--circleDiameter) / 5)
 }
 
-.social {
-    /* Add some margin for spacing */
-    margin-top: 20px;
+.hero-circle {
+    position: 'relative';
+    width: var(--circleDiameter);
+    height: var(--circleDiameter);
+}
+
+.hero-rotate {
+    position: relative;
+    top: -7px;
+    left:-7px;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    animation: rotate 30s linear infinite;
 }
 
 .social img{
     filter: invert(48%) sepia(13%) saturate(3207%) hue-rotate(130deg);
-    height: 75px;
-    width: 75px;
-    margin-left: 10px;
+}
+
+.social {
+    position: absolute;
+    width: var(--planets);
+    height: var(--planets);
+    border-radius: 100%;
+    animation: maintain 30s linear infinite;
+}
+
+.social>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 5px solid white;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    animation: scale 1s linear infinite alternate; 
+}
+
+.social:nth-child(1) {
+    top: calc(-1 * var(--planets) / 2);
+    left: calc(var(--circleDiameter)/ 2 - var(--planets) / 2)
+}
+
+.social:nth-child(2) {
+    top: calc(var(--circleDiameter)/ 2 - var(--planets) / 2);
+    right: calc(-1 * var(--planets) / 2);
+}
+
+.social:nth-child(3) {
+    top: calc(var(--circleDiameter)/ 2 - var(--planets) / 2);
+    left: calc(-1 * var(--planets) / 2);
+}
+
+.social:nth-child(4) {
+    left: calc(var(--circleDiameter)/ 2 - var(--planets) / 2 );
+    bottom: calc(-1 * var(--planets) / 2);
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0)
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes maintain {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+@keyframes scale {
+    0% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
 }
 
 /* For desktop mode, display social icons horizontally */
 @media (min-width: 768px) {
-    .social {
-        display: flex;
-        justify-content: center;
+    .container {
+        --circleDiameter: 300px;
     }
 
-    .social a {
-        margin: 0 10px; /* Add spacing between icons */
+    .name {
+        font-size: 60px;
+    }
+
+    .social img{
+        height: 90px;
+        width: 90px;
     }
 }
 
 /* For mobile mode, display social icons vertically */
 @media (max-width: 767px) {
-    .social {
-        display: block;
+    .container {
+        --circleDiameter: 200px;
     }
 
-    .social a {
-        display: block;
-        margin: 10px auto; /* Center the icons */
+    .name {
+        font-size: 40px;
+    }
+
+    .social img{
+        height: 90px;
+        width: 90px;
     }
 }
