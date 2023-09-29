@@ -1,0 +1,193 @@
+.loader-container {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    -moz-animation: scaleUp 0.5s linear;
+    -webkit-animation: scaleUp 0.5s linear;
+    animation: scaleUp 0.5s linear;
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 0;
+  }
+  .loader-container .loader {
+    background: #ff0c0c;
+    background: -moz-linear-gradient(0deg, #ff0c0c, #21d400);
+    background: -webkit-linear-gradient(0deg, #ff0c0c, #21d400);
+    background: linear-gradient(0deg, #ff0c0c, #21d400);
+    border-radius: 10px;
+    -webkit-filter: hue-rotate(0deg);
+    filter: hue-rotate(0deg);
+    animation: filterHue 2.5s linear infinite;
+    height: 100%;
+    width: 100%;
+    transform: rotate(0deg);
+  }
+  .loader-container .loader::after {
+    content: '';
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    left: 10px;
+    top: 10px;
+    border-radius: 100%;
+  }
+  
+  @-webkit-keyframes $animationName {
+    50% {
+      -webkit-filter: hue-rotate(1000deg);
+      filter: hue-rotate(1000deg);
+    }
+    100% {
+      -webkit-filter: hue-rotate(2000deg);
+      filter: hue-rotate(2000deg);
+    }
+  }
+  @-moz-keyframes filterHue2 {
+    50% {
+      -webkit-filter: hue-rotate(1000deg);
+      filter: hue-rotate(1000deg);
+    }
+    100% {
+      -webkit-filter: hue-rotate(2000deg);
+      filter: hue-rotate(2000deg);
+    }
+  }
+  @-ms-keyframes filterHue2 {
+    50% {
+      -webkit-filter: hue-rotate(1000deg);
+      filter: hue-rotate(1000deg);
+    }
+    100% {
+      -webkit-filter: hue-rotate(2000deg);
+      filter: hue-rotate(2000deg);
+    }
+  }
+  @keyframes filterHue2 {
+    50% {
+      -webkit-filter: hue-rotate(1000deg);
+      filter: hue-rotate(1000deg);
+    }
+    100% {
+      -webkit-filter: hue-rotate(2000deg);
+      filter: hue-rotate(2000deg);
+    }
+  }
+  @-webkit-keyframes $animationName {
+    50% {
+      -webkit-filter: hue-rotate(1000deg);
+      filter: hue-rotate(1000deg);
+    }
+    100% {
+      -webkit-filter: hue-rotate(2000deg);
+      filter: hue-rotate(2000deg);
+      -moz-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  @-moz-keyframes filterHue {
+    50% {
+      -webkit-filter: hue-rotate(1000deg);
+      filter: hue-rotate(1000deg);
+    }
+    100% {
+      -webkit-filter: hue-rotate(2000deg);
+      filter: hue-rotate(2000deg);
+      -moz-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  @-ms-keyframes filterHue {
+    50% {
+      -webkit-filter: hue-rotate(1000deg);
+      filter: hue-rotate(1000deg);
+    }
+    100% {
+      -webkit-filter: hue-rotate(2000deg);
+      filter: hue-rotate(2000deg);
+      -moz-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes filterHue {
+    50% {
+      -webkit-filter: hue-rotate(1000deg);
+      filter: hue-rotate(1000deg);
+    }
+    100% {
+      -webkit-filter: hue-rotate(2000deg);
+      filter: hue-rotate(2000deg);
+      -moz-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  @-webkit-keyframes $animationName {
+    50% {
+      -moz-transform: scale(0.5);
+      -ms-transform: scale(0.5);
+      -webkit-transform: scale(0.5);
+      transform: scale(0.5);
+      opacity: 1;
+    }
+    100% {
+      -moz-transform: scale(0.25);
+      -ms-transform: scale(0.25);
+      -webkit-transform: scale(0.25);
+      transform: scale(0.25);
+    }
+  }
+  @-moz-keyframes scaleUp {
+    50% {
+      -moz-transform: scale(0.5);
+      -ms-transform: scale(0.5);
+      -webkit-transform: scale(0.5);
+      transform: scale(0.5);
+      opacity: 1;
+    }
+    100% {
+      -moz-transform: scale(0.25);
+      -ms-transform: scale(0.25);
+      -webkit-transform: scale(0.25);
+      transform: scale(0.25);
+    }
+  }
+  @-ms-keyframes scaleUp {
+    50% {
+      -moz-transform: scale(0.5);
+      -ms-transform: scale(0.5);
+      -webkit-transform: scale(0.5);
+      transform: scale(0.5);
+      opacity: 1;
+    }
+    100% {
+      -moz-transform: scale(0.25);
+      -ms-transform: scale(0.25);
+      -webkit-transform: scale(0.25);
+      transform: scale(0.25);
+    }
+  }
+  @keyframes scaleUp {
+    50% {
+      -moz-transform: scale(0.5);
+      -ms-transform: scale(0.5);
+      -webkit-transform: scale(0.5);
+      transform: scale(0.5);
+      opacity: 1;
+    }
+    100% {
+      -moz-transform: scale(0.25);
+      -ms-transform: scale(0.25);
+      -webkit-transform: scale(0.25);
+      transform: scale(0.25);
+    }
+  }
+  
