@@ -208,6 +208,10 @@ button {
         font-size: 35px;
     }
 
+    button {
+        display: none;
+    }
+
     .social {
         margin: auto;
     }
