@@ -208,6 +208,10 @@ button {
         font-size: 35px;
     }
 
+    .social {
+        margin: auto;
+    }
+
     .social img{
         height: 70px;
         width: 70px;
