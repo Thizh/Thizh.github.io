@@ -134,6 +134,49 @@ button {
     bottom: calc(-1 * var(--planets) / 2);
 }
 
+        /* Styling for the overlay screen */
+        #overlay {
+            display: none;
+            width: 70%;
+            height: 70%;
+            background: rgba(0, 0, 0, 0.6); /* 60% opacity black background */
+            z-index: 999;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        #overlay-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        /* Styling for the close button */
+        #close-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+            margin: 25px; /* Added margin */
+            padding: 5px 10px;
+            border: 2px solid #ff0000; /* Red border */
+        }
+        
+        .paragraphs {
+        font-size: 20px;
+        }
+        
+        .greet {
+        font-weight: bold;
+        font-size: 30px;
+        }
+
 @keyframes rotate {
     0% {
         transform: rotate(0)
