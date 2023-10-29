@@ -139,7 +139,7 @@ button {
             display: none;
             width: 70%;
             height: 70%;
-            background: rgba(0, 0, 0, 0.6); /* 60% opacity black background */
+            background: rgba(0, 0, 0, 0.8); /* 60% opacity black background */
             z-index: 999;
             color: white;
             text-align: center;
