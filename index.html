@@ -1,93 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="color-scheme" content="dark light">
-    <meta name="description" content="A undergraduate student who wants to become better Software Engineer" />
+    <meta name="description" content="An undergraduate student who wants to become better Software Engineer" />
     <meta name="keywords" content="Thisitha Wickramarachchi, Thisitha Wickramaarachchi, Thizh Wick" />
     <meta name="google-site-verification" content="8ttwbOKq9eFt6en9DZ38XdbdQXeyiZ5-RejtDOpqX8U" />
     <link rel="icon" type="image/x-icon" href="/assets/T.ico">
     <meta property="og:title" content="Thisitha Wickramarachchi" />
-    <meta property="og:description" content="A undergraduate student who wants to become better Software Engineer" />
+    <meta property="og:description" content="An undergraduate student who wants to become better Software Engineer" />
     <title>ThIzH WiCk</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gluten&effect=fire-animation">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mouse.css">
     <link rel="stylesheet" href="aurora.css">
     <script>
-        function showOverlay() {
-            document.getElementById("overlay").style.display = "block";
+        function showOverlayThizh() {
+            document.getElementById("overlay-me").style.display = "block";
         }
 
-        function closeOverlay() {
-            document.getElementById("overlay").style.display = "none";
+        function closeOverlayThizh() {
+            document.getElementById("overlay-me").style.display = "none";
         }
+
+        function showOverlayCV() {
+            document.getElementById("overlay-cv").style.display = "block";
+            return true;
+        }
+
+        window.onclick = function (event) {
+            var myBox = document.getElementById('overlay-cv');
+
+            if (event.target.contains(myBox) && event.target !== myBox) {
+                myBox.style.display = 'none';
+            }
+        }
+
     </script>
 </head>
+
 <body>
-    <script  src="./script.js"></script>
-     <div id="overlay">
-        <div id="close-button" onclick="closeOverlay()">X</div>
+    <script src="./script.js"></script>
+    <div id="overlay-me">
+        <div id="close-button" onclick="closeOverlayThizh()">X</div>
         <div id="overlay-content">
-        
-            <p  class="paragraphs"><span class="greet">Greetings!</span> I am a passionate and dedicated software engineering undergraduate at the prestigious Open University of Sri Lanka. My journey into the world of technology and programming has been a thrilling adventure.</p><br/><br/>
 
-            <p  class="paragraphs">As a student with a relentless curiosity and a hunger for knowledge, I've immersed myself in the ever-evolving field of programming. Through my academic pursuits and personal projects, I've honed my skills and embraced the art of problem-solving. My journey is fueled by a desire to create innovative solutions and to explore the limitless possibilities of code.</p><br/><br/>
+            <p class="paragraphs"><span class="greet">Greetings!</span> I am a passionate and dedicated software
+                engineering undergraduate at the prestigious Open University of Sri Lanka. My journey into the world of
+                technology and programming has been a thrilling adventure.</p><br /><br />
 
-            <p  class="paragraphs">My commitment to excellence is reflected in my dedication to mastering various programming languages, software development methodologies, and emerging technologies. I relish the challenges that programming presents and thrive in the pursuit of elegant, efficient, and creative solutions.</p><br/><br/>
+            <p class="paragraphs">As a student with a relentless curiosity and a hunger for knowledge, I've immersed
+                myself in the ever-evolving field of programming. Through my academic pursuits and personal projects,
+                I've honed my skills and embraced the art of problem-solving. My journey is fueled by a desire to create
+                innovative solutions and to explore the limitless possibilities of code.</p><br /><br />
+
+            <p class="paragraphs">My commitment to excellence is reflected in my dedication to mastering various
+                programming languages, software development methodologies, and emerging technologies. I relish the
+                challenges that programming presents and thrive in the pursuit of elegant, efficient, and creative
+                solutions.</p><br /><br />
         </div>
-     </div>
-    <div class="wrapper">
-        <div class="navbar">
-            <nav>
-                <ul>
-                    <li><a href="#" style="visibility: hidden;">......</a></li>
-                    <li><a href="thisitha_cv.pdf">Resume</a></li>
-                </ul>
-            </nav>
-        </div>
-        <div class="row">
-            <div class="col">
-                <h1 class="name">Thisitha Wickramaarachchi</h1>
-                <p style="font-size: 20px;">AKA <span style="font-family: 'Gluten'; font-size: 30px;" class="font-effect-fire-animation">Thizh Wick</span></p>
-                <button type="button" onclick="showOverlay()">Who Tf is Thizh?</button>
+    </div>
+    <div>
+        <iframe id="overlay-cv" src="https://drive.google.com/file/d/1Zhcyj0M42vsc0MhQwhctcfrPAKqKMahH/preview">
+        </iframe>
+
+        <div class="wrapper">
+            <div class="navbar">
+                <nav>
+                    <ul>
+                        <li><a href="#" style="visibility: hidden;">......</a></li>
+                        <li onclick="showOverlayCV()">Resume</a></li>
+                    </ul>
+                </nav>
             </div>
-            <div class="col">
-                <div class="container">
-                    <div class="hero-circle">
-                        <div class="hero-rotate" id="circle">
-                            <div class="social">
-                                <a href="https://github.com/Thizh" aria-label="my github"><img src="./assets/github.png" alt="my github"/></a>
-                            </div>
-                            <div class="social">
-                                <a href="https://discordapp.com/users/926325270133227600" aria-label="my discord"><img src="./assets/discord.png" alt="my discord" /></a>
-                            </div>
-                            <div class="social">
-                                <a href="https://www.linkedin.com/in/thizh" aria-label="my linkedin"><img src="./assets/linkedin.png" alt="my linkedin" /></a>
-                            </div>
-                            <div class="social">
-                                <a href="mailto:thizhwick@gmail.com" aria-label="my mail"><img src="./assets/gmail.png" alt="my mail" /></a>
+            <div class="row">
+                <div class="col">
+                    <h1 class="name">Thisitha Wickramaarachchi</h1>
+                    <p style="font-size: 20px;">AKA <span style="font-family: 'Gluten'; font-size: 30px;"
+                            class="font-effect-fire-animation">Thizh Wick</span></p>
+                    <button type="button" onclick="showOverlayThizh()">Who Tf is Thizh?</button>
+                </div>
+                <div class="col">
+                    <div class="container">
+                        <div class="hero-circle">
+                            <div class="hero-rotate" id="circle">
+                                <div class="social">
+                                    <a href="https://github.com/Thizh" aria-label="my github"><img
+                                            src="./assets/github.png" alt="my github" /></a>
+                                </div>
+                                <div class="social">
+                                    <a href="https://discordapp.com/users/926325270133227600"
+                                        aria-label="my discord"><img src="./assets/discord.png" alt="my discord" /></a>
+                                </div>
+                                <div class="social">
+                                    <a href="https://www.linkedin.com/in/thizh" aria-label="my linkedin"><img
+                                            src="./assets/linkedin.png" alt="my linkedin" /></a>
+                                </div>
+                                <div class="social">
+                                    <a href="mailto:thizhwick@gmail.com" aria-label="my mail"><img
+                                            src="./assets/gmail.png" alt="my mail" /></a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <article id="wrap">
-        <article id="lightings">
-            <section id="one">
-                <section id="two">
-                    <section id="three">
-                        <section id="four">
-                            <section id="five">
+        <article id="wrap">
+            <article id="lightings">
+                <section id="one">
+                    <section id="two">
+                        <section id="three">
+                            <section id="four">
+                                <section id="five">
 
+                                </section>
                             </section>
                         </section>
                     </section>
                 </section>
-            </section>
+            </article>
         </article>
-    </article>
 </body>
+
 </html>
