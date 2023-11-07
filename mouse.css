@@ -34,10 +34,10 @@
     border-radius: 100%;
   }
   
-  @-webkit-keyframes $animationName {
+  @-webkit-keyframes animationName {
     50% {
-      -webkit-filter: hue-rotate(1000deg);
-      filter: hue-rotate(1000deg);
+      -webkit-filter: hue-rotate(0deg);
+      filter: hue-rotate(0deg);
     }
     100% {
       -webkit-filter: hue-rotate(2000deg);
@@ -46,8 +46,8 @@
   }
   @-moz-keyframes filterHue2 {
     50% {
-      -webkit-filter: hue-rotate(1000deg);
-      filter: hue-rotate(1000deg);
+      -webkit-filter: hue-rotate(0deg);
+      filter: hue-rotate(0deg);
     }
     100% {
       -webkit-filter: hue-rotate(2000deg);
@@ -56,8 +56,8 @@
   }
   @-ms-keyframes filterHue2 {
     50% {
-      -webkit-filter: hue-rotate(1000deg);
-      filter: hue-rotate(1000deg);
+      -webkit-filter: hue-rotate(0deg);
+      filter: hue-rotate(0deg);
     }
     100% {
       -webkit-filter: hue-rotate(2000deg);
@@ -66,18 +66,18 @@
   }
   @keyframes filterHue2 {
     50% {
-      -webkit-filter: hue-rotate(1000deg);
-      filter: hue-rotate(1000deg);
+      -webkit-filter: hue-rotate(0deg);
+      filter: hue-rotate(0deg);
     }
     100% {
       -webkit-filter: hue-rotate(2000deg);
       filter: hue-rotate(2000deg);
     }
   }
-  @-webkit-keyframes $animationName {
+  @-webkit-keyframes animationName {
     50% {
-      -webkit-filter: hue-rotate(1000deg);
-      filter: hue-rotate(1000deg);
+      -webkit-filter: hue-rotate(0deg);
+      filter: hue-rotate(0deg);
     }
     100% {
       -webkit-filter: hue-rotate(2000deg);
@@ -90,8 +90,8 @@
   }
   @-moz-keyframes filterHue {
     50% {
-      -webkit-filter: hue-rotate(1000deg);
-      filter: hue-rotate(1000deg);
+      -webkit-filter: hue-rotate(0deg);
+      filter: hue-rotate(0deg);
     }
     100% {
       -webkit-filter: hue-rotate(2000deg);
@@ -104,8 +104,8 @@
   }
   @-ms-keyframes filterHue {
     50% {
-      -webkit-filter: hue-rotate(1000deg);
-      filter: hue-rotate(1000deg);
+      -webkit-filter: hue-rotate(0deg);
+      filter: hue-rotate(0deg);
     }
     100% {
       -webkit-filter: hue-rotate(2000deg);
@@ -118,8 +118,8 @@
   }
   @keyframes filterHue {
     50% {
-      -webkit-filter: hue-rotate(1000deg);
-      filter: hue-rotate(1000deg);
+      -webkit-filter: hue-rotate(0deg);
+      filter: hue-rotate(0deg);
     }
     100% {
       -webkit-filter: hue-rotate(2000deg);
@@ -130,7 +130,7 @@
       transform: rotate(360deg);
     }
   }
-  @-webkit-keyframes $animationName {
+  @-webkit-keyframes animationName {
     50% {
       -moz-transform: scale(0.5);
       -ms-transform: scale(0.5);
