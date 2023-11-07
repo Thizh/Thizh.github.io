@@ -193,19 +193,6 @@ button {
     /* Red border */
 }
 
-#close-button-cv {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    cursor: pointer;
-    margin: 25px;
-    /* Added margin */
-    padding: 5px 10px;
-    border: 2px solid #ff0000;
-    /* Red border */
-    z-index: 99999;
-}
-
 .paragraphs {
     all: initial;
     font-size: 20px;
