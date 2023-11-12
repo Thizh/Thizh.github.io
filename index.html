@@ -70,7 +70,7 @@
                 <nav>
                     <ul>
                         <li><a href="#" style="visibility: hidden;">......</a></li>
-                        <li onclick="showOverlayCV()" style="cursor: pointer;">Resume</a></li>
+                        <li onclick="showOverlayCV()" style="cursor: pointer;" id="resume">Resume</a></li>
                     </ul>
                 </nav>
             </div>
@@ -79,7 +79,10 @@
                     <h1 class="name">Thisitha Wickramaarachchi</h1>
                     <p style="font-size: 20px;">AKA <span style="font-family: 'Gluten'; font-size: 30px;"
                             class="font-effect-fire-animation">Thizh Wick</span></p>
-                    <button type="button" onclick="showOverlayThizh()">Who Tf is Thizh?</button>
+                    <div style="flex-direction: row;">
+                        <button type="button" onclick="showOverlayThizh()" class="thizh">Who Tf is Thizh?</button>
+                        <a href="./resume.html"><button type="button" class="resume-btn">Resume</button></a>
+                    </div>
                 </div>
                 <div class="col">
                     <div class="container">

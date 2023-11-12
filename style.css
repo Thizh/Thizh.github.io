@@ -60,7 +60,6 @@ p {
 }
 
 button {
-    width: 180px;
     color: #000;
     font-size: 12px;
     padding: 12px 0;
@@ -254,6 +253,14 @@ button {
         width: 90px;
     }
 
+    .resume-btn {
+        display: none;
+    }
+
+    button {
+        width: 180px;
+    }
+
     .row {
         display: flex;
         height: 88%;
@@ -284,8 +291,17 @@ button {
         font-size: 35px;
     }
 
-    button {
+    #resume {
         display: none;
+    }
+
+    .thizh {
+        display: none;
+    }
+
+    button {
+        width: 150px;
+        margin-right: 10px;
     }
 
     .social {
