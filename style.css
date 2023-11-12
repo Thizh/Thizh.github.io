@@ -192,6 +192,10 @@ button {
     /* Red border */
 }
 
+.resume-btn {
+    display: none;
+}
+
 .paragraphs {
     all: initial;
     font-size: 20px;
@@ -251,10 +255,6 @@ button {
     .social img {
         height: 90px;
         width: 90px;
-    }
-
-    .resume-btn {
-        display: none;
     }
 
     button {
