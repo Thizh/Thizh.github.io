@@ -16,27 +16,28 @@
     <link rel="stylesheet" href="mouse.css">
     <link rel="stylesheet" href="aurora.css">
     <script>
-        function showOverlayThizh() {
-            document.getElementById("overlay-me").style.display = "block";
-        }
-
-        function closeOverlayThizh() {
-            document.getElementById("overlay-me").style.display = "none";
-        }
-
-        function showOverlayCV() {
-            document.getElementById("overlay-cv").style.display = "block";
-            return true;
-        }
-
-        window.onclick = function (event) {
-            var myBox = document.getElementById('overlay-cv');
-
-            if (event.target.contains(myBox) && event.target !== myBox) {
-                myBox.style.display = 'none';
+        document.addEventListener('DOMContentLoaded', function () {
+            function showOverlayThizh() {
+                document.getElementById("overlay-me").style.display = "block";
             }
-        }
 
+            function closeOverlayThizh() {
+                document.getElementById("overlay-me").style.display = "none";
+            }
+
+            function showOverlayCV() {
+                document.getElementById("overlay-cv").style.display = "block";
+            }
+
+            document.addEventListener('click', function (event) {
+                var myBox = document.getElementById('overlay-cv');
+
+                // Check if the clicked element is outside the overlay
+                if (!myBox.contains(event.target)) {
+                    myBox.style.display = 'none';
+                }
+            });
+        });
     </script>
 </head>
 
