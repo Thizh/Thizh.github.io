@@ -259,7 +259,7 @@ button {
 
     #resume {
         --b: 0.1em;   /* the thickness of the line */
-        --c: #563D7C; /* the color */
+        --c: #CF9FFF; /* the color */
         
         color: #0000;
         padding-block: var(--b);
