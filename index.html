@@ -16,28 +16,32 @@
     <link rel="stylesheet" href="mouse.css">
     <link rel="stylesheet" href="aurora.css">
     <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            function showOverlayThizh() {
-                document.getElementById("overlay-me").style.display = "block";
+        function showOverlayThizh() {
+            document.getElementById("overlay-me").style.display = "block";
+        }
+
+        function closeOverlayThizh() {
+            document.getElementById("overlay-me").style.display = "none";
+        }
+
+        function showOverlayCV() {
+            var overlayCV = document.getElementById("overlay-cv");
+
+            if (overlayCV.style.display === "block") {
+                overlayCV.style.display = "none"; 
+            } else {
+                overlayCV.style.display = "block"; 
             }
+        }
 
-            function closeOverlayThizh() {
-                document.getElementById("overlay-me").style.display = "none";
+        window.onclick = function (event) {
+            var myBox = document.getElementById('overlay-cv');
+
+            if (event.target.contains(myBox) && event.target !== myBox) {
+                myBox.style.display = 'none';
             }
+        }
 
-            function showOverlayCV() {
-                document.getElementById("overlay-cv").style.display = "block";
-            }
-
-            document.addEventListener('click', function (event) {
-                var myBox = document.getElementById('overlay-cv');
-
-                // Check if the clicked element is outside the overlay
-                if (!myBox.contains(event.target)) {
-                    myBox.style.display = 'none';
-                }
-            });
-        });
     </script>
 </head>
 
@@ -82,7 +86,8 @@
                             class="font-effect-fire-animation">Thizh Wick</span></p>
                     <div style="flex-direction: row;">
                         <button type="button" onclick="showOverlayThizh()" class="thizh">Who Tf is Thizh?</button>
-                        <a href="https://drive.google.com/file/d/1Zhcyj0M42vsc0MhQwhctcfrPAKqKMahH/preview"><button type="button" class="resume-btn">résumé</button></a>
+                        <a href="https://drive.google.com/file/d/1Zhcyj0M42vsc0MhQwhctcfrPAKqKMahH/preview"><button
+                                type="button" class="resume-btn">résumé</button></a>
                     </div>
                 </div>
                 <div class="col">
