@@ -6,11 +6,3 @@ document.querySelector('.wrapper')
     document.querySelector('canvas')
       .dispatchEvent(newEvent);
 });
-
-document.querySelector('.wrapper')
-  .addEventListener('touchmove', event => {
-    newEvent = new event.constructor(
-      event.type, event);
-    document.querySelector('canvas')
-      .dispatchEvent(newEvent);
-});
