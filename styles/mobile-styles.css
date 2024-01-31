@@ -1,5 +1,4 @@
 @media (max-width: 767px) {
-
     .container {
         --circleDiameter: 200px;
     }
@@ -23,9 +22,13 @@
         padding: 10px;
     }
 
-    #overlay-content {
-        font-size: 10px;
-    }
+.paragraphs {
+    font-size: 10px;
+}
+
+.greet {
+    font-size: 20px;
+}
 
     #overlay-cv {
         margin-bottom: 50px;
@@ -69,5 +72,5 @@
         text-decoration: none;
         display: block;
     }
-
 }
+
