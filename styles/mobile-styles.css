@@ -17,7 +17,6 @@
     }
 
     #overlay-me {
-        margin: 0;
         text-align: center;
         z-index: 0;
         max-height: 90vh;
@@ -32,17 +31,11 @@
         margin-bottom: 50px;
         width: 100%;
         height: 70vh;
-        border: none;
-
     }
 
     #close-button {
         display: none;
     }
-
-
-
-
 
     #resume {
         display: none;
