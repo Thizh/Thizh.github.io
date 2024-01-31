@@ -1,0 +1,80 @@
+@media (max-width: 767px) {
+
+    .container {
+        --circleDiameter: 200px;
+    }
+
+    nav {
+        text-align: center;
+    }
+
+    .name {
+        font-size: 35px;
+    }
+
+    .wrapper {
+        height: 70vh;
+    }
+
+    #overlay-me {
+        margin: 0;
+        text-align: center;
+        z-index: 0;
+        max-height: 90vh;
+        padding: 10px;
+    }
+
+    #overlay-content {
+        font-size: 10px;
+    }
+
+    #overlay-cv {
+        margin-bottom: 50px;
+        width: 100%;
+        height: 70vh;
+        border: none;
+
+    }
+
+    #close-button {
+        display: none;
+    }
+
+
+
+
+
+    #resume {
+        display: none;
+    }
+
+    .thizh {
+        display: none;
+    }
+
+    button {
+        width: 150px;
+        margin-right: 10px;
+    }
+
+    .social {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        margin: auto;
+    }
+
+    .social img {
+        height: 70px;
+        width: 70px;
+    }
+
+    /* Links inside the dropdown */
+    ul li {
+        color: black;
+        padding: 10px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+}

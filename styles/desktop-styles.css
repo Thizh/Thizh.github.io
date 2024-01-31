@@ -1,0 +1,120 @@
+@media (min-width: 768px) {
+
+    body {
+        overflow: hidden;
+    }
+
+    .container {
+        --circleDiameter: 300px;
+    }
+
+    nav {
+        flex: 1;
+        text-align: right;
+    }
+
+
+    .name {
+        font-size: 60px;
+    }
+
+    .social img {
+        height: 90px;
+        width: 90px;
+    }
+
+    #resume {
+        --b: 0.1em;
+        /* the thickness of the line */
+        --c: #CF9FFF;
+        /* the color */
+
+        color: #0000;
+        padding-block: var(--b);
+        background:
+            linear-gradient(var(--c) 50%, #fff 0) 0% calc(100% - var(--_p, 0%))/100% 200%,
+            linear-gradient(var(--c) 0 0) 0% var(--_p, 0%)/var(--_p, 0%) var(--b) no-repeat;
+        -webkit-background-clip: text, padding-box;
+        background-clip: text, padding-box;
+        transition: .3s var(--_s, 0s) linear, background-size .3s calc(.3s - var(--_s, 0s));
+    }
+
+    #resume:hover {
+        --_p: 100%;
+        --_s: .3s;
+    }
+
+    button {
+        width: 180px;
+    }
+
+    .row {
+        display: flex;
+        height: 88%;
+        align-items: center;
+    }
+
+    .col {
+        flex-basis: 50%;
+    }
+
+    .dropbtn {
+        display: none;
+    }
+
+    /* Styling for the overlay screen */
+    #overlay-me {
+        display: none;
+        width: 70%;
+        height: 70%;
+        max-height: 90vh;
+        /* Set a maximum height for better mobile experience */
+        background: rgba(0, 0, 0, 0.8);
+        z-index: 999;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    #overlay-cv {
+        display: none;
+        width: 70%;
+        height: 90%;
+        background: rgba(0, 0, 0, 0.8);
+        /* 60% opacity black background */
+        z-index: 999;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 9999;
+    }
+
+    #overlay-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    /* Styling for the close button */
+    #close-button {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+        margin: 25px;
+        /* Added margin */
+        padding: 5px 10px;
+        border: 2px solid #ff0000;
+        /* Red border */
+    }
+
+}

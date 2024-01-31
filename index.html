@@ -14,40 +14,108 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gluten&effect=fire-animation">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/mouse2.css">
-    <link rel="stylesheet" href="./styles/snowflakes.css">
+    <link rel="stylesheet" href="./styles/mobile-styles.css">
+    <link rel="stylesheet" href="./styles/desktop-styles.css">
     <script>
+        function isDesktopMode() {
+            return window.innerWidth > 767; // Adjust the threshold as needed
+        }
+
         function showOverlayThizh() {
-            document.getElementById("overlay-me").style.display = "block";
+            if (isDesktopMode()) {
+                document.getElementById("overlay-me").style.display = "block";
+            }
         }
 
         function closeOverlayThizh() {
-            document.getElementById("overlay-me").style.display = "none";
+            if (isDesktopMode()) {
+                document.getElementById("overlay-me").style.display = "none";
+            }
         }
 
         function showOverlayCV() {
-            var overlayCV = document.getElementById("overlay-cv");
+            if (isDesktopMode()) {
+                var overlayCV = document.getElementById("overlay-cv");
 
-            if (overlayCV.style.display === "block") {
-                overlayCV.style.display = "none";
-            } else {
-                overlayCV.style.display = "block";
+                if (overlayCV.style.display === "block") {
+                    overlayCV.style.display = "none";
+                } else {
+                    overlayCV.style.display = "block";
+                }
             }
         }
 
         window.onclick = function (event) {
             var myBox = document.getElementById('overlay-cv');
 
-            if (event.target.contains(myBox) && event.target !== myBox) {
+            if (isDesktopMode() && event.target.contains(myBox) && event.target !== myBox) {
                 myBox.style.display = 'none';
             }
         }
 
+        window.onscroll = function () {
+            if (isDesktopMode()) {
+                var overlay = document.getElementById("overlay-me");
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    overlay.style.display = "block";
+                } else {
+                    overlay.style.display = "none";
+                }
+            }
+        };
     </script>
 </head>
 
 <body>
     <html>
 </body>
+<div>
+    <div class="wrapper">
+        <div class="navbar">
+            <nav>
+                <ul>
+                    <li><a href="https://linktr.ee/thizh" style="cursor: pointer;" id="resume">linktree</a></li>
+                    <li onclick="showOverlayCV()" style="cursor: pointer;" id="resume">résumé</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h1 class="name">Thisitha Wickramaarachchi</h1>
+                <p style="font-size: 20px;">AKA <span style="font-family: 'Gluten'; font-size: 30px;"
+                        class="font-effect-fire-animation">Thizh Wick</span></p>
+                <div style="flex-direction: row;">
+                    <button type="button" onclick="showOverlayThizh()" class="thizh">Who Tf is Thizh?</button>
+                    <a href="https://drive.google.com/file/d/1Zhcyj0M42vsc0MhQwhctcfrPAKqKMahH/preview"><button
+                            type="button" class="resume-btn">résumé</button></a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="container">
+                    <div class="hero-circle">
+                        <div class="hero-rotate" id="circle">
+                            <div class="social">
+                                <a href="https://github.com/Thizh" aria-label="my github"><img src="./assets/github.png"
+                                        alt="my github" /></a>
+                            </div>
+                            <div class="social">
+                                <a href="https://discordapp.com/users/926325270133227600" aria-label="my discord"><img
+                                        src="./assets/discord.png" alt="my discord" /></a>
+                            </div>
+                            <div class="social">
+                                <a href="https://www.linkedin.com/in/thizh" aria-label="my linkedin"><img
+                                        src="./assets/linkedin.png" alt="my linkedin" /></a>
+                            </div>
+                            <div class="social">
+                                <a href="mailto:thizhwick@gmail.com" aria-label="my mail"><img src="./assets/gmail.png"
+                                        alt="my mail" /></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div id="overlay-me">
         <div id="close-button" onclick="closeOverlayThizh()">X</div>
         <div id="overlay-content">
@@ -67,56 +135,8 @@
                 solutions.</p><br /><br />
         </div>
     </div>
-    <div>
-        <iframe id="overlay-cv"
-            src="https://drive.google.com/file/d/1yQf6nd9f4X5jJhW8ZDIYBy9-Fl4wko1s/preview"></iframe>
-
-        <div class="wrapper">
-            <div class="navbar">
-                <nav>
-                    <ul>
-                        <li><a href="https://linktr.ee/thizh" style="cursor: pointer;" id="resume">linktree</a></li>
-                        <li onclick="showOverlayCV()" style="cursor: pointer;" id="resume">résumé</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <h1 class="name">Thisitha Wickramaarachchi</h1>
-                    <p style="font-size: 20px;">AKA <span style="font-family: 'Gluten'; font-size: 30px;"
-                            class="font-effect-fire-animation">Thizh Wick</span></p>
-                    <div style="flex-direction: row;">
-                        <button type="button" onclick="showOverlayThizh()" class="thizh">Who Tf is Thizh?</button>
-                        <a href="https://drive.google.com/file/d/1Zhcyj0M42vsc0MhQwhctcfrPAKqKMahH/preview"><button
-                                type="button" class="resume-btn">résumé</button></a>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="container">
-                        <div class="hero-circle">
-                            <div class="hero-rotate" id="circle">
-                                <div class="social">
-                                    <a href="https://github.com/Thizh" aria-label="my github"><img
-                                            src="./assets/github.png" alt="my github" /></a>
-                                </div>
-                                <div class="social">
-                                    <a href="https://discordapp.com/users/926325270133227600"
-                                        aria-label="my discord"><img src="./assets/discord.png" alt="my discord" /></a>
-                                </div>
-                                <div class="social">
-                                    <a href="https://www.linkedin.com/in/thizh" aria-label="my linkedin"><img
-                                            src="./assets/linkedin.png" alt="my linkedin" /></a>
-                                </div>
-                                <div class="social">
-                                    <a href="mailto:thizhwick@gmail.com" aria-label="my mail"><img
-                                            src="./assets/gmail.png" alt="my mail" /></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <iframe id="overlay-cv" src="https://drive.google.com/file/d/1yQf6nd9f4X5jJhW8ZDIYBy9-Fl4wko1s/preview">
+    </iframe>
     <canvas></canvas>
     </body>
 
