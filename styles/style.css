@@ -140,13 +140,11 @@ button {
 
 .paragraphs {
     all: initial;
-    font-size: 20px;
 }
 
 .greet {
     all: initial;
     font-weight: bold;
-    font-size: 30px;
 }
 
 @keyframes rotate {

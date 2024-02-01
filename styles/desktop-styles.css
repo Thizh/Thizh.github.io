@@ -61,6 +61,14 @@
     .dropbtn {
         display: none;
     }
+    
+    .paragraphs {
+    font-size: 20px;
+}
+
+.greet {
+    font-size: 30px;
+}
 
     /* Styling for the overlay screen */
     #overlay-me {
