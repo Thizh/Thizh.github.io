@@ -22,13 +22,13 @@
         padding: 10px;
     }
 
-.paragraphs {
-    font-size: 10px;
-}
+    .paragraphs {
+        font-size: 10px;
+    }
 
-.greet {
-    font-size: 20px;
-}
+    .greet {
+        font-size: 20px;
+    }
 
     #overlay-cv {
         margin-bottom: 50px;
@@ -73,4 +73,3 @@
         display: block;
     }
 }
-
