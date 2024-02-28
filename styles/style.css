@@ -42,11 +42,6 @@ button,
     position: relative;
 }
 
-/*beta*/
-.container {
-    margin-bottom: 10%;
-}
-
 .name {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: bisque;
@@ -75,7 +70,7 @@ button {
 .container {
     display: grid;
     width: auto;
-    height: 500px;
+    height: 40vh;
     place-items: center;
     overflow: hidden;
     --planets: calc(var(--circleDiameter) / 5)
