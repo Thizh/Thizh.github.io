@@ -42,6 +42,11 @@ button,
     position: relative;
 }
 
+/*beta*/
+.container {
+    margin-bottom: 10%;
+}
+
 .name {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: bisque;

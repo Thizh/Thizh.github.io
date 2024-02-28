@@ -18,7 +18,7 @@
 
     #overlay-me {
         text-align: center;
-        z-index: 0;
+        z-index: 999;
         max-height: 90vh;
         padding: 10px;
         margin-top: 10px;
