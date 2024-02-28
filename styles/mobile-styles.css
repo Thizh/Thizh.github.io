@@ -13,7 +13,7 @@
 
     .wrapper {
         max-height: 200px;
-        min-height: 70vh;
+        min-height: 65vh;
     }
 
     #overlay-me {
@@ -24,14 +24,22 @@
         margin-top: 10px;
     }
 
+    #topic1, #topic2 {
+        text-align: left;
+        margin: 5%;
+        font-family: 'Pacifico', cursive;
+    }  
+
+    .paragraphs, .greet {
+        font-family: "Helvetica Neue", Arial, sans-serif;
+    }
+
     .paragraphs {
         font-size: 15px;
-        font-family: "Helvetica Neue", Arial, sans-serif;
     }
 
     .greet {
         font-size: 20px;
-        font-family: "Helvetica Neue", Arial, sans-serif;
     }
 
     #overlay-cv {
