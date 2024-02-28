@@ -70,7 +70,7 @@ button {
 .container {
     display: grid;
     width: auto;
-    height: 50vh;
+    height: 45vh;
     place-items: center;
     overflow: hidden;
     --planets: calc(var(--circleDiameter) / 5)
