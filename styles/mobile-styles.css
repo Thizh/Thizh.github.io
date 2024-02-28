@@ -12,7 +12,8 @@
     }
 
     .wrapper {
-        height: 70vh;
+        max-height: 200px;
+        min-height: 70vh;
     }
 
     #overlay-me {
@@ -25,10 +26,12 @@
 
     .paragraphs {
         font-size: 15px;
+        font-family: "Helvetica Neue", Arial, sans-serif;
     }
 
     .greet {
         font-size: 20px;
+        font-family: "Helvetica Neue", Arial, sans-serif;
     }
 
     #overlay-cv {
