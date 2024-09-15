@@ -1,6 +1,7 @@
 @media (max-width: 767px) {
     .container {
         --circleDiameter: 200px;
+        height: 45vh;
     }
 
     nav {
@@ -64,7 +65,6 @@
         width: 150px;
         margin-right: 10px;
     }
-
     .social {
         align-items: center;
         justify-content: center;
